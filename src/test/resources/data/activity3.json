@@ -1,0 +1,16 @@
+{
+    "program": {
+        "id": 5,
+        "name": "Calidad de aguas portuarias"
+    },
+    "project": {
+        "id": 23,
+        "name": "Monitorización de calidad de aguas portuarias en la provincia de Santa Cruz de Tenerife 2010-2012"
+    },
+	"activity": {
+		"id": 1071,
+		"code": "VDOC-54321",
+		"name": "Sebadal",
+		"description": "Descripción cualquiera."
+	}
+}

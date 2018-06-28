@@ -1,0 +1,1529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.5.0.v201506092134 Build &lt;@BUILD@></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">resources/design/RedmicLibrary.rptlibrary</property>
+            <property name="namespace">RedmicLibrary</property>
+        </structure>
+    </list-property>
+    <parameters>
+        <scalar-parameter name="ReportTitle" id="1254" extends="RedmicLibrary.ReportTitle">
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">FICHA DE ESPECIE</value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="RedmicDomain" id="1255" extends="RedmicLibrary.RedmicDomain"/>
+        <scalar-parameter name="Disclaimer" id="1261" extends="RedmicLibrary.Disclaimer"/>
+        <scalar-parameter name="NoDataMessage" id="1263" extends="RedmicLibrary.NoDataMessage"/>
+        <scalar-parameter name="RedmicProtocol" id="1352" extends="RedmicLibrary.RedmicProtocol"/>
+        <scalar-parameter name="EmptyImage" id="1353" extends="RedmicLibrary.EmptyImage"/>
+    </parameters>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.data.oda.pojo.dataSet" name="SpeciesInfo" id="708"
+ extends="RedmicLibrary.SpeciesInfo"/>
+        <oda-data-set extensionID="org.eclipse.birt.data.oda.pojo.dataSet" name="SpeciesDocuments" id="1119"
+ extends="RedmicLibrary.SpeciesDocuments"/>
+        <oda-data-set extensionID="org.eclipse.birt.data.oda.pojo.dataSet" name="SpeciesActivities" id="1135"
+ extends="RedmicLibrary.SpeciesActivities"/>
+    </data-sets>
+    <page-setup>
+        <simple-master-page name="RedmicMasterPage" id="4" extends="RedmicLibrary.RedmicMasterPage">
+            <overridden-values>
+                <ref-entry baseId="225" name="NewGrid" id="225"/>
+                <ref-entry baseId="226" id="226"/>
+                <ref-entry baseId="227" id="227"/>
+                <ref-entry baseId="299" id="299"/>
+                <ref-entry baseId="228" id="228"/>
+                <ref-entry baseId="229" id="229"/>
+                <ref-entry baseId="323" name="NewImage" id="323"/>
+                <ref-entry baseId="230" id="230"/>
+                <ref-entry baseId="316" name="NewData1" id="316"/>
+                <ref-entry baseId="298" id="298"/>
+                <ref-entry baseId="231" name="NewText" id="231"/>
+                <ref-entry baseId="255" name="NewGrid1" id="255"/>
+                <ref-entry baseId="256" id="256"/>
+                <ref-entry baseId="257" id="257"/>
+                <ref-entry baseId="258" id="258"/>
+                <ref-entry baseId="288" name="NewGrid2" id="288"/>
+                <ref-entry baseId="289" id="289"/>
+                <ref-entry baseId="290" id="290"/>
+                <ref-entry baseId="291" id="291"/>
+                <ref-entry baseId="292" id="292"/>
+                <ref-entry baseId="317" name="NewGrid3" id="317"/>
+                <ref-entry baseId="318" id="318"/>
+                <ref-entry baseId="319" id="319"/>
+                <ref-entry baseId="320" id="320"/>
+                <ref-entry baseId="321" id="321"/>
+                <ref-entry baseId="324" name="NewImage1" id="324"/>
+                <ref-entry baseId="322" id="322"/>
+                <ref-entry baseId="293" id="293"/>
+                <ref-entry baseId="259" name="NewGrid21" id="259"/>
+                <ref-entry baseId="260" id="260"/>
+                <ref-entry baseId="261" id="261"/>
+                <ref-entry baseId="262" id="262"/>
+                <ref-entry baseId="263" id="263"/>
+                <ref-entry baseId="264" id="264"/>
+                <ref-entry baseId="265" name="NewAutoText" id="265"/>
+                <ref-entry baseId="266" id="266"/>
+                <ref-entry baseId="267" name="NewText1" id="267"/>
+                <ref-entry baseId="268" id="268"/>
+                <ref-entry baseId="269" name="NewAutoText1" id="269"/>
+            </overridden-values>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <grid id="680">
+            <column id="681"/>
+            <row id="682">
+                <property name="borderBottomColor">#297691</property>
+                <property name="borderBottomStyle">solid</property>
+                <property name="borderBottomWidth">2px</property>
+                <cell id="683">
+                    <grid id="1167">
+                        <property name="width">7.197916666666667in</property>
+                        <property name="dataSet">SpeciesInfo</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">Authorship</property>
+                                <text-property name="displayName">Authorship</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["Authorship"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">ScientificName</property>
+                                <text-property name="displayName">ScientificName</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["ScientificName"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">ClassScientificName</property>
+                                <text-property name="displayName">ClassScientificName</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["ClassScientificName"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">FamilyScientificName</property>
+                                <text-property name="displayName">FamilyScientificName</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["FamilyScientificName"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">GenusScientificName</property>
+                                <text-property name="displayName">GenusScientificName</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["GenusScientificName"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">KingdomScientificName</property>
+                                <text-property name="displayName">KingdomScientificName</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["KingdomScientificName"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">OrderScientificName</property>
+                                <text-property name="displayName">OrderScientificName</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["OrderScientificName"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">PhylumScientificName</property>
+                                <text-property name="displayName">PhylumScientificName</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["PhylumScientificName"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">SubphylumScientificName</property>
+                                <text-property name="displayName">SubphylumScientificName</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["SubphylumScientificName"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <column id="1168">
+                            <property name="width">7.197916666666667in</property>
+                        </column>
+                        <row id="1169">
+                            <property name="fontWeight">bold</property>
+                            <cell id="1170">
+                                <data id="1246">
+                                    <property name="fontSize">14pt</property>
+                                    <property name="fontStyle">italic</property>
+                                    <property name="paddingRight">3pt</property>
+                                    <property name="textAlign">left</property>
+                                    <property name="display">inline</property>
+                                    <property name="dataSet">SpeciesInfo</property>
+                                    <list-property name="boundDataColumns">
+                                        <structure>
+                                            <property name="name">ScientificName</property>
+                                            <text-property name="displayName">ScientificName</text-property>
+                                            <expression name="expression" type="javascript">dataSetRow["ScientificName"]</expression>
+                                            <property name="dataType">string</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="resultSetColumn">ScientificName</property>
+                                </data>
+                                <data id="1247">
+                                    <property name="fontSize">14pt</property>
+                                    <property name="display">inline</property>
+                                    <property name="dataSet">SpeciesInfo</property>
+                                    <list-property name="boundDataColumns">
+                                        <structure>
+                                            <property name="name">Authorship</property>
+                                            <text-property name="displayName">Authorship</text-property>
+                                            <expression name="expression" type="javascript">dataSetRow["Authorship"]</expression>
+                                            <property name="dataType">string</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="resultSetColumn">Authorship</property>
+                                </data>
+                            </cell>
+                        </row>
+                        <row id="1171">
+                            <property name="fontSize">16pt</property>
+                            <property name="fontWeight">normal</property>
+                            <cell id="1172">
+                                <data id="1340">
+                                    <property name="fontSize">12pt</property>
+                                    <property name="paddingLeft">1pt</property>
+                                    <property name="display">inline</property>
+                                    <property name="dataSet">SpeciesInfo</property>
+                                    <list-property name="boundDataColumns">
+                                        <structure>
+                                            <property name="name">KingdomScientificName</property>
+                                            <text-property name="displayName">KingdomScientificName</text-property>
+                                            <expression name="expression" type="javascript">dataSetRow["KingdomScientificName"]</expression>
+                                            <property name="dataType">string</property>
+                                            <property name="allowExport">true</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="resultSetColumn">KingdomScientificName</property>
+                                </data>
+                                <data id="1341">
+                                    <property name="backgroundAttachment">scroll</property>
+                                    <property name="backgroundPositionX">0%</property>
+                                    <property name="backgroundPositionY">0%</property>
+                                    <property name="backgroundRepeat">repeat</property>
+                                    <property name="fontFamily">serif</property>
+                                    <property name="fontSize">12pt</property>
+                                    <property name="fontWeight">normal</property>
+                                    <property name="fontStyle">normal</property>
+                                    <property name="fontVariant">normal</property>
+                                    <property name="color">black</property>
+                                    <property name="textLineThrough">none</property>
+                                    <property name="textOverline">none</property>
+                                    <property name="textUnderline">none</property>
+                                    <property name="borderBottomColor">black</property>
+                                    <property name="borderBottomStyle">none</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftColor">black</property>
+                                    <property name="borderLeftStyle">none</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightColor">black</property>
+                                    <property name="borderRightStyle">none</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopColor">black</property>
+                                    <property name="borderTopStyle">none</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="marginTop">0pt</property>
+                                    <property name="marginLeft">0pt</property>
+                                    <property name="marginBottom">0pt</property>
+                                    <property name="marginRight">0pt</property>
+                                    <property name="paddingTop">1pt</property>
+                                    <property name="paddingLeft">3pt</property>
+                                    <property name="paddingBottom">1pt</property>
+                                    <property name="paddingRight">1pt</property>
+                                    <property name="letterSpacing">normal</property>
+                                    <property name="lineHeight">normal</property>
+                                    <property name="orphans">2</property>
+                                    <property name="textTransform">none</property>
+                                    <property name="whiteSpace">normal</property>
+                                    <property name="widows">2</property>
+                                    <property name="wordSpacing">normal</property>
+                                    <property name="display">inline</property>
+                                    <property name="pageBreakAfter">auto</property>
+                                    <property name="pageBreakBefore">auto</property>
+                                    <property name="pageBreakInside">auto</property>
+                                    <property name="showIfBlank">false</property>
+                                    <property name="canShrink">false</property>
+                                    <property name="overflow">hidden</property>
+                                    <property name="dataSet">SpeciesInfo</property>
+                                    <list-property name="visibility">
+                                        <structure>
+                                            <property name="format">all</property>
+                                            <expression name="valueExpr" type="javascript">row._outer["PhylumScientificName"] == null || !row._outer["PhylumScientificName"].length</expression>
+                                        </structure>
+                                    </list-property>
+                                    <list-property name="boundDataColumns">
+                                        <structure>
+                                            <property name="name">PhylumScientificName</property>
+                                            <text-property name="displayName">PhylumScientificName</text-property>
+                                            <expression name="expression" type="javascript">"> " + dataSetRow["PhylumScientificName"]</expression>
+                                            <property name="dataType">string</property>
+                                            <property name="allowExport">true</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="resultSetColumn">PhylumScientificName</property>
+                                </data>
+                                <data id="1342">
+                                    <property name="backgroundAttachment">scroll</property>
+                                    <property name="backgroundPositionX">0%</property>
+                                    <property name="backgroundPositionY">0%</property>
+                                    <property name="backgroundRepeat">repeat</property>
+                                    <property name="fontFamily">serif</property>
+                                    <property name="fontSize">12pt</property>
+                                    <property name="fontWeight">normal</property>
+                                    <property name="fontStyle">normal</property>
+                                    <property name="fontVariant">normal</property>
+                                    <property name="color">black</property>
+                                    <property name="textLineThrough">none</property>
+                                    <property name="textOverline">none</property>
+                                    <property name="textUnderline">none</property>
+                                    <property name="borderBottomColor">black</property>
+                                    <property name="borderBottomStyle">none</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftColor">black</property>
+                                    <property name="borderLeftStyle">none</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightColor">black</property>
+                                    <property name="borderRightStyle">none</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopColor">black</property>
+                                    <property name="borderTopStyle">none</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="marginTop">0pt</property>
+                                    <property name="marginLeft">0pt</property>
+                                    <property name="marginBottom">0pt</property>
+                                    <property name="marginRight">0pt</property>
+                                    <property name="paddingTop">1pt</property>
+                                    <property name="paddingLeft">3pt</property>
+                                    <property name="paddingBottom">1pt</property>
+                                    <property name="paddingRight">1pt</property>
+                                    <property name="letterSpacing">normal</property>
+                                    <property name="lineHeight">normal</property>
+                                    <property name="orphans">2</property>
+                                    <property name="textTransform">none</property>
+                                    <property name="whiteSpace">normal</property>
+                                    <property name="widows">2</property>
+                                    <property name="wordSpacing">normal</property>
+                                    <property name="display">inline</property>
+                                    <property name="pageBreakAfter">auto</property>
+                                    <property name="pageBreakBefore">auto</property>
+                                    <property name="pageBreakInside">auto</property>
+                                    <property name="showIfBlank">false</property>
+                                    <property name="canShrink">false</property>
+                                    <property name="overflow">hidden</property>
+                                    <property name="dataSet">SpeciesInfo</property>
+                                    <list-property name="visibility">
+                                        <structure>
+                                            <property name="format">all</property>
+                                            <expression name="valueExpr" type="javascript">row._outer["SubphylumScientificName"] == null || !row._outer["SubphylumScientificName"].length</expression>
+                                        </structure>
+                                    </list-property>
+                                    <list-property name="boundDataColumns">
+                                        <structure>
+                                            <property name="name">SubphylumScientificName</property>
+                                            <text-property name="displayName">SubphylumScientificName</text-property>
+                                            <expression name="expression" type="javascript">"> " + dataSetRow["SubphylumScientificName"]</expression>
+                                            <property name="dataType">string</property>
+                                            <property name="allowExport">true</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="resultSetColumn">SubphylumScientificName</property>
+                                </data>
+                                <data id="1343">
+                                    <property name="backgroundAttachment">scroll</property>
+                                    <property name="backgroundPositionX">0%</property>
+                                    <property name="backgroundPositionY">0%</property>
+                                    <property name="backgroundRepeat">repeat</property>
+                                    <property name="fontFamily">serif</property>
+                                    <property name="fontSize">12pt</property>
+                                    <property name="fontWeight">normal</property>
+                                    <property name="fontStyle">normal</property>
+                                    <property name="fontVariant">normal</property>
+                                    <property name="color">black</property>
+                                    <property name="textLineThrough">none</property>
+                                    <property name="textOverline">none</property>
+                                    <property name="textUnderline">none</property>
+                                    <property name="borderBottomColor">black</property>
+                                    <property name="borderBottomStyle">none</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftColor">black</property>
+                                    <property name="borderLeftStyle">none</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightColor">black</property>
+                                    <property name="borderRightStyle">none</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopColor">black</property>
+                                    <property name="borderTopStyle">none</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="marginTop">0pt</property>
+                                    <property name="marginLeft">0pt</property>
+                                    <property name="marginBottom">0pt</property>
+                                    <property name="marginRight">0pt</property>
+                                    <property name="paddingTop">1pt</property>
+                                    <property name="paddingLeft">3pt</property>
+                                    <property name="paddingBottom">1pt</property>
+                                    <property name="paddingRight">1pt</property>
+                                    <property name="letterSpacing">normal</property>
+                                    <property name="lineHeight">normal</property>
+                                    <property name="orphans">2</property>
+                                    <property name="textTransform">none</property>
+                                    <property name="whiteSpace">normal</property>
+                                    <property name="widows">2</property>
+                                    <property name="wordSpacing">normal</property>
+                                    <property name="display">inline</property>
+                                    <property name="pageBreakAfter">auto</property>
+                                    <property name="pageBreakBefore">auto</property>
+                                    <property name="pageBreakInside">auto</property>
+                                    <property name="showIfBlank">false</property>
+                                    <property name="canShrink">false</property>
+                                    <property name="overflow">hidden</property>
+                                    <property name="dataSet">SpeciesInfo</property>
+                                    <list-property name="visibility">
+                                        <structure>
+                                            <property name="format">all</property>
+                                            <expression name="valueExpr" type="javascript">row._outer["ClassScientificName"] == null || !row._outer["ClassScientificName"].length</expression>
+                                        </structure>
+                                    </list-property>
+                                    <list-property name="boundDataColumns">
+                                        <structure>
+                                            <property name="name">ClassScientificName</property>
+                                            <text-property name="displayName">ClassScientificName</text-property>
+                                            <expression name="expression" type="javascript">"> " + dataSetRow["ClassScientificName"]</expression>
+                                            <property name="dataType">string</property>
+                                            <property name="allowExport">true</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="resultSetColumn">ClassScientificName</property>
+                                </data>
+                                <data id="1344">
+                                    <property name="backgroundAttachment">scroll</property>
+                                    <property name="backgroundPositionX">0%</property>
+                                    <property name="backgroundPositionY">0%</property>
+                                    <property name="backgroundRepeat">repeat</property>
+                                    <property name="fontFamily">serif</property>
+                                    <property name="fontSize">12pt</property>
+                                    <property name="fontWeight">normal</property>
+                                    <property name="fontStyle">normal</property>
+                                    <property name="fontVariant">normal</property>
+                                    <property name="color">black</property>
+                                    <property name="textLineThrough">none</property>
+                                    <property name="textOverline">none</property>
+                                    <property name="textUnderline">none</property>
+                                    <property name="borderBottomColor">black</property>
+                                    <property name="borderBottomStyle">none</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftColor">black</property>
+                                    <property name="borderLeftStyle">none</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightColor">black</property>
+                                    <property name="borderRightStyle">none</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopColor">black</property>
+                                    <property name="borderTopStyle">none</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="marginTop">0pt</property>
+                                    <property name="marginLeft">0pt</property>
+                                    <property name="marginBottom">0pt</property>
+                                    <property name="marginRight">0pt</property>
+                                    <property name="paddingTop">1pt</property>
+                                    <property name="paddingLeft">3pt</property>
+                                    <property name="paddingBottom">1pt</property>
+                                    <property name="paddingRight">1pt</property>
+                                    <property name="letterSpacing">normal</property>
+                                    <property name="lineHeight">normal</property>
+                                    <property name="orphans">2</property>
+                                    <property name="textTransform">none</property>
+                                    <property name="whiteSpace">normal</property>
+                                    <property name="widows">2</property>
+                                    <property name="wordSpacing">normal</property>
+                                    <property name="display">inline</property>
+                                    <property name="pageBreakAfter">auto</property>
+                                    <property name="pageBreakBefore">auto</property>
+                                    <property name="pageBreakInside">auto</property>
+                                    <property name="showIfBlank">false</property>
+                                    <property name="canShrink">false</property>
+                                    <property name="overflow">hidden</property>
+                                    <property name="dataSet">SpeciesInfo</property>
+                                    <list-property name="visibility">
+                                        <structure>
+                                            <property name="format">all</property>
+                                            <expression name="valueExpr" type="javascript">row._outer["OrderScientificName"] == null || !row._outer["OrderScientificName"].length</expression>
+                                        </structure>
+                                    </list-property>
+                                    <list-property name="boundDataColumns">
+                                        <structure>
+                                            <property name="name">OrderScientificName</property>
+                                            <text-property name="displayName">OrderScientificName</text-property>
+                                            <expression name="expression" type="javascript">"> " + dataSetRow["OrderScientificName"]</expression>
+                                            <property name="dataType">string</property>
+                                            <property name="allowExport">true</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="resultSetColumn">OrderScientificName</property>
+                                </data>
+                                <data id="1345">
+                                    <property name="backgroundAttachment">scroll</property>
+                                    <property name="backgroundPositionX">0%</property>
+                                    <property name="backgroundPositionY">0%</property>
+                                    <property name="backgroundRepeat">repeat</property>
+                                    <property name="fontFamily">serif</property>
+                                    <property name="fontSize">12pt</property>
+                                    <property name="fontWeight">normal</property>
+                                    <property name="fontStyle">normal</property>
+                                    <property name="fontVariant">normal</property>
+                                    <property name="color">black</property>
+                                    <property name="textLineThrough">none</property>
+                                    <property name="textOverline">none</property>
+                                    <property name="textUnderline">none</property>
+                                    <property name="borderBottomColor">black</property>
+                                    <property name="borderBottomStyle">none</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftColor">black</property>
+                                    <property name="borderLeftStyle">none</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightColor">black</property>
+                                    <property name="borderRightStyle">none</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopColor">black</property>
+                                    <property name="borderTopStyle">none</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="marginTop">0pt</property>
+                                    <property name="marginLeft">0pt</property>
+                                    <property name="marginBottom">0pt</property>
+                                    <property name="marginRight">0pt</property>
+                                    <property name="paddingTop">1pt</property>
+                                    <property name="paddingLeft">3pt</property>
+                                    <property name="paddingBottom">1pt</property>
+                                    <property name="paddingRight">1pt</property>
+                                    <property name="letterSpacing">normal</property>
+                                    <property name="lineHeight">normal</property>
+                                    <property name="orphans">2</property>
+                                    <property name="textTransform">none</property>
+                                    <property name="whiteSpace">normal</property>
+                                    <property name="widows">2</property>
+                                    <property name="wordSpacing">normal</property>
+                                    <property name="display">inline</property>
+                                    <property name="pageBreakAfter">auto</property>
+                                    <property name="pageBreakBefore">auto</property>
+                                    <property name="pageBreakInside">auto</property>
+                                    <property name="showIfBlank">false</property>
+                                    <property name="canShrink">false</property>
+                                    <property name="overflow">hidden</property>
+                                    <property name="dataSet">SpeciesInfo</property>
+                                    <list-property name="visibility">
+                                        <structure>
+                                            <property name="format">all</property>
+                                            <expression name="valueExpr" type="javascript">row._outer["FamilyScientificName"] == null || !row._outer["FamilyScientificName"].length</expression>
+                                        </structure>
+                                    </list-property>
+                                    <list-property name="boundDataColumns">
+                                        <structure>
+                                            <property name="name">FamilyScientificName</property>
+                                            <text-property name="displayName">FamilyScientificName</text-property>
+                                            <expression name="expression" type="javascript">"> " + dataSetRow["FamilyScientificName"]</expression>
+                                            <property name="dataType">string</property>
+                                            <property name="allowExport">true</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="resultSetColumn">FamilyScientificName</property>
+                                </data>
+                            </cell>
+                        </row>
+                    </grid>
+                </cell>
+            </row>
+            <row id="684">
+                <cell id="685">
+                    <property name="borderBottomStyle">none</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderTopStyle">none</property>
+                    <grid id="635">
+                        <property name="borderBottomStyle">none</property>
+                        <property name="borderLeftStyle">none</property>
+                        <property name="borderRightStyle">none</property>
+                        <property name="width">7.177083333333333in</property>
+                        <property name="dataSet">SpeciesInfo</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">RankId</property>
+                                <text-property name="displayName">RankId</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["RankId"]</expression>
+                                <property name="dataType">float</property>
+                            </structure>
+                        </list-property>
+                        <column id="636">
+                            <property name="fontWeight">bold</property>
+                            <property name="textAlign">left</property>
+                            <property name="width">1.5208333333333333in</property>
+                        </column>
+                        <column id="637">
+                            <property name="width">5.65625in</property>
+                        </column>
+                        <row id="638">
+                            <cell id="639">
+                                <property name="paddingTop">3pt</property>
+                                <label id="694">
+                                    <text-property name="text">Código</text-property>
+                                </label>
+                            </cell>
+                            <cell id="640">
+                                <property name="paddingTop">3pt</property>
+                                <text-data id="805">
+                                    <property name="dataSet">SpeciesInfo</property>
+                                    <list-property name="boundDataColumns">
+                                        <structure>
+                                            <property name="name">Worms</property>
+                                            <text-property name="displayName">Worms</text-property>
+                                            <expression name="expression" type="javascript">dataSetRow["Worms"]</expression>
+                                            <property name="dataType">string</property>
+                                        </structure>
+                                        <structure>
+                                            <property name="name">Aphia</property>
+                                            <expression name="expression" type="javascript">dataSetRow["Aphia"]</expression>
+                                            <property name="dataType">integer</property>
+                                            <property name="allowExport">true</property>
+                                        </structure>
+                                    </list-property>
+                                    <expression name="valueExpr">"&lt;A href=\""+row["Worms"]+"\">"+row["Aphia"]+"&lt;/A>"</expression>
+                                    <property name="contentType">html</property>
+                                </text-data>
+                            </cell>
+                        </row>
+                        <row id="1366">
+                            <list-property name="visibility">
+                                <structure>
+                                    <property name="format">all</property>
+                                    <expression name="valueExpr" type="javascript">row["RankId"] === 10</expression>
+                                </structure>
+                            </list-property>
+                            <cell id="1367">
+                                <property name="paddingTop">3pt</property>
+                                <label id="1369">
+                                    <text-property name="text">Rango</text-property>
+                                </label>
+                            </cell>
+                            <cell id="1368">
+                                <property name="paddingTop">3pt</property>
+                                <data id="1370">
+                                    <property name="dataSet">SpeciesInfo</property>
+                                    <list-property name="boundDataColumns">
+                                        <structure>
+                                            <property name="name">RankId</property>
+                                            <text-property name="displayName">RankId</text-property>
+                                            <expression name="expression" type="javascript">if (dataSetRow["RankId"] === 11) {
+	"Subespecie";
+} else if (dataSetRow["RankId"] === 12) {
+	"Variedad";
+}</expression>
+                                            <property name="dataType">string</property>
+                                            <property name="allowExport">true</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="resultSetColumn">RankId</property>
+                                </data>
+                            </cell>
+                        </row>
+                        <row id="691">
+                            <cell id="692">
+                                <property name="paddingTop">3pt</property>
+                                <label id="797">
+                                    <text-property name="text">Status taxonómico</text-property>
+                                </label>
+                            </cell>
+                            <cell id="693">
+                                <property name="paddingTop">3pt</property>
+                                <data id="858">
+                                    <list-property name="mapRules">
+                                        <structure>
+                                            <expression name="testExpr" type="javascript">row["StatusName"]</expression>
+                                            <property name="operator">eq</property>
+                                            <simple-property-list name="value1">
+                                                <value type="javascript">"accepted"</value>
+                                            </simple-property-list>
+                                            <text-property name="display">Aceptado</text-property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="dataSet">SpeciesInfo</property>
+                                    <list-property name="boundDataColumns">
+                                        <structure>
+                                            <property name="name">StatusName</property>
+                                            <text-property name="displayName">StatusName</text-property>
+                                            <expression name="expression" type="javascript">dataSetRow["StatusName"]</expression>
+                                            <property name="dataType">string</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="resultSetColumn">StatusName</property>
+                                </data>
+                            </cell>
+                        </row>
+                        <row id="641">
+                            <cell id="642">
+                                <property name="paddingTop">3pt</property>
+                                <label id="658">
+                                    <text-property name="text">Nombre común</text-property>
+                                </label>
+                            </cell>
+                            <cell id="643">
+                                <property name="paddingTop">3pt</property>
+                                <data id="1265">
+                                    <property name="paddingTop">1pt</property>
+                                    <property name="paddingLeft">1pt</property>
+                                    <property name="paddingBottom">1pt</property>
+                                    <property name="paddingRight">1pt</property>
+                                    <property name="display">inline</property>
+                                    <property name="dataSet">SpeciesInfo</property>
+                                    <list-property name="visibility">
+                                        <structure>
+                                            <property name="format">all</property>
+                                            <expression name="valueExpr" type="javascript">!!row["CommonName"]</expression>
+                                        </structure>
+                                    </list-property>
+                                    <list-property name="boundDataColumns">
+                                        <structure>
+                                            <property name="name">NoDataMessage</property>
+                                            <expression name="expression" type="javascript">params["NoDataMessage"]</expression>
+                                            <property name="dataType">string</property>
+                                        </structure>
+                                        <structure>
+                                            <property name="name">CommonName</property>
+                                            <text-property name="displayName">CommonName</text-property>
+                                            <expression name="expression" type="javascript">dataSetRow["CommonName"]</expression>
+                                            <property name="dataType">string</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="resultSetColumn">NoDataMessage</property>
+                                </data>
+                                <data id="771">
+                                    <property name="display">inline</property>
+                                    <property name="dataSet">SpeciesInfo</property>
+                                    <list-property name="visibility">
+                                        <structure>
+                                            <property name="format">all</property>
+                                            <expression name="valueExpr" type="javascript">row["CommonName"] == null || !row["CommonName"].length</expression>
+                                        </structure>
+                                    </list-property>
+                                    <list-property name="boundDataColumns">
+                                        <structure>
+                                            <property name="name">CommonName</property>
+                                            <text-property name="displayName">CommonName</text-property>
+                                            <expression name="expression" type="javascript">dataSetRow["CommonName"]</expression>
+                                            <property name="dataType">string</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="resultSetColumn">CommonName</property>
+                                </data>
+                            </cell>
+                        </row>
+                        <row id="1354">
+                            <cell id="1355">
+                                <property name="paddingTop">3pt</property>
+                                <label id="1357">
+                                    <text-property name="text">Nombres populares</text-property>
+                                </label>
+                            </cell>
+                            <cell id="1356">
+                                <property name="paddingTop">3pt</property>
+                                <data id="1358">
+                                    <property name="paddingTop">1pt</property>
+                                    <property name="paddingLeft">1pt</property>
+                                    <property name="paddingBottom">1pt</property>
+                                    <property name="paddingRight">1pt</property>
+                                    <property name="display">inline</property>
+                                    <property name="dataSet">SpeciesInfo</property>
+                                    <list-property name="visibility">
+                                        <structure>
+                                            <property name="format">all</property>
+                                            <expression name="valueExpr" type="javascript">!!row["PopularNames"]</expression>
+                                        </structure>
+                                    </list-property>
+                                    <list-property name="boundDataColumns">
+                                        <structure>
+                                            <property name="name">NoDataMessage</property>
+                                            <expression name="expression" type="javascript">params["NoDataMessage"]</expression>
+                                            <property name="dataType">string</property>
+                                        </structure>
+                                        <structure>
+                                            <property name="name">PopularNames</property>
+                                            <text-property name="displayName">PopularNames</text-property>
+                                            <expression name="expression" type="javascript">dataSetRow["PopularNames"]</expression>
+                                            <property name="dataType">string</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="resultSetColumn">NoDataMessage</property>
+                                </data>
+                                <data id="1365">
+                                    <property name="backgroundAttachment">scroll</property>
+                                    <property name="backgroundPositionX">0%</property>
+                                    <property name="backgroundPositionY">0%</property>
+                                    <property name="backgroundRepeat">repeat</property>
+                                    <property name="fontFamily">serif</property>
+                                    <property name="fontSize">10pt</property>
+                                    <property name="fontWeight">normal</property>
+                                    <property name="fontStyle">normal</property>
+                                    <property name="fontVariant">normal</property>
+                                    <property name="color">black</property>
+                                    <property name="textLineThrough">none</property>
+                                    <property name="textOverline">none</property>
+                                    <property name="textUnderline">none</property>
+                                    <property name="borderBottomColor">black</property>
+                                    <property name="borderBottomStyle">none</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftColor">black</property>
+                                    <property name="borderLeftStyle">none</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightColor">black</property>
+                                    <property name="borderRightStyle">none</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopColor">black</property>
+                                    <property name="borderTopStyle">none</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="marginTop">0pt</property>
+                                    <property name="marginLeft">0pt</property>
+                                    <property name="marginBottom">0pt</property>
+                                    <property name="marginRight">0pt</property>
+                                    <property name="paddingTop">1pt</property>
+                                    <property name="paddingLeft">1pt</property>
+                                    <property name="paddingBottom">1pt</property>
+                                    <property name="paddingRight">1pt</property>
+                                    <property name="letterSpacing">normal</property>
+                                    <property name="lineHeight">normal</property>
+                                    <property name="orphans">2</property>
+                                    <property name="textTransform">none</property>
+                                    <property name="whiteSpace">normal</property>
+                                    <property name="widows">2</property>
+                                    <property name="wordSpacing">normal</property>
+                                    <property name="display">inline</property>
+                                    <property name="pageBreakAfter">auto</property>
+                                    <property name="pageBreakBefore">auto</property>
+                                    <property name="pageBreakInside">auto</property>
+                                    <property name="showIfBlank">false</property>
+                                    <property name="canShrink">false</property>
+                                    <property name="overflow">hidden</property>
+                                    <property name="dataSet">SpeciesInfo</property>
+                                    <list-property name="boundDataColumns">
+                                        <structure>
+                                            <property name="name">SplittedPopularNames</property>
+                                            <text-property name="displayName">SplittedPopularNames</text-property>
+                                            <expression name="expression" type="javascript">dataSetRow["SplittedPopularNames"]</expression>
+                                            <property name="dataType">string</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="resultSetColumn">SplittedPopularNames</property>
+                                </data>
+                            </cell>
+                        </row>
+                        <row id="644">
+                            <cell id="645">
+                                <property name="paddingTop">3pt</property>
+                                <label id="659">
+                                    <text-property name="text">Notas</text-property>
+                                </label>
+                            </cell>
+                            <cell id="646">
+                                <property name="paddingTop">3pt</property>
+                                <data id="1266">
+                                    <property name="paddingTop">1pt</property>
+                                    <property name="paddingLeft">1pt</property>
+                                    <property name="paddingBottom">1pt</property>
+                                    <property name="paddingRight">1pt</property>
+                                    <property name="display">inline</property>
+                                    <property name="dataSet">SpeciesInfo</property>
+                                    <list-property name="visibility">
+                                        <structure>
+                                            <property name="format">all</property>
+                                            <expression name="valueExpr" type="javascript">!!row["Note"]</expression>
+                                        </structure>
+                                    </list-property>
+                                    <list-property name="boundDataColumns">
+                                        <structure>
+                                            <property name="name">NoDataMessage</property>
+                                            <expression name="expression" type="javascript">params["NoDataMessage"]</expression>
+                                            <property name="dataType">string</property>
+                                        </structure>
+                                        <structure>
+                                            <property name="name">Note</property>
+                                            <expression name="expression" type="javascript">dataSetRow["Note"]</expression>
+                                            <property name="dataType">string</property>
+                                            <property name="allowExport">true</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="resultSetColumn">NoDataMessage</property>
+                                </data>
+                                <data id="798">
+                                    <property name="display">inline</property>
+                                    <property name="dataSet">SpeciesInfo</property>
+                                    <list-property name="visibility">
+                                        <structure>
+                                            <property name="format">all</property>
+                                            <expression name="valueExpr" type="javascript">row["Note"] == null || !row["Note"].length</expression>
+                                        </structure>
+                                    </list-property>
+                                    <list-property name="boundDataColumns">
+                                        <structure>
+                                            <property name="name">Note</property>
+                                            <text-property name="displayName">Note</text-property>
+                                            <expression name="expression" type="javascript">dataSetRow["Note"]</expression>
+                                            <property name="dataType">string</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="resultSetColumn">Note</property>
+                                </data>
+                            </cell>
+                        </row>
+                        <row id="696">
+                            <cell id="697">
+                                <property name="paddingTop">3pt</property>
+                                <label id="699">
+                                    <text-property name="text">Enlace</text-property>
+                                </label>
+                            </cell>
+                            <cell id="698">
+                                <property name="paddingTop">3pt</property>
+                                <text-data id="803">
+                                    <property name="dataSet">SpeciesInfo</property>
+                                    <list-property name="boundDataColumns">
+                                        <structure>
+                                            <property name="name">URL</property>
+                                            <expression name="expression" type="javascript">dataSetRow["URL"]</expression>
+                                            <property name="dataType">string</property>
+                                            <property name="allowExport">true</property>
+                                        </structure>
+                                    </list-property>
+                                    <expression name="valueExpr">"&lt;A href=\""+row["URL"]+"\">"+row["URL"]+"&lt;/A>"</expression>
+                                    <property name="contentType">html</property>
+                                </text-data>
+                            </cell>
+                        </row>
+                        <row id="1256">
+                            <cell id="1257">
+                                <property name="paddingTop">3pt</property>
+                                <label id="1252">
+                                    <text-property name="text">Actualizado</text-property>
+                                </label>
+                            </cell>
+                            <cell id="1258">
+                                <property name="paddingTop">3pt</property>
+                                <data id="1248">
+                                    <property name="dataSet">SpeciesInfo</property>
+                                    <list-property name="boundDataColumns">
+                                        <structure>
+                                            <property name="name">Updated</property>
+                                            <text-property name="displayName">Updated</text-property>
+                                            <expression name="expression" type="javascript">date = new Date(dataSetRow["Updated"]);
+day = ("0" + date.getDate()).slice(-2);
+month = ("0" + (date.getMonth() + 1)).slice(-2);
+hours = ("0" + date.getHours()).slice(-2);
+minutes = ("0" + date.getMinutes()).slice(-2);
+str = day + '-' + month  + '-' + date.getFullYear() + " " + hours + ":" + minutes;
+str</expression>
+                                            <property name="dataType">string</property>
+                                            <property name="allowExport">true</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="resultSetColumn">Updated</property>
+                                </data>
+                            </cell>
+                        </row>
+                    </grid>
+                </cell>
+            </row>
+            <row id="807">
+                <cell id="808">
+                    <property name="borderBottomStyle">none</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderTopStyle">none</property>
+                    <grid id="809">
+                        <column id="810">
+                            <property name="verticalAlign">middle</property>
+                        </column>
+                        <column id="811"/>
+                        <row id="812">
+                            <cell id="813">
+                                <grid id="815">
+                                    <property name="marginTop">5pt</property>
+                                    <property name="marginBottom">5pt</property>
+                                    <property name="width">3.5in</property>
+                                    <column id="816">
+                                        <property name="fontWeight">bold</property>
+                                        <property name="width">1.4791666666666667in</property>
+                                    </column>
+                                    <column id="817">
+                                        <property name="width">2.0208333333333335in</property>
+                                    </column>
+                                    <row id="818">
+                                        <cell id="819">
+                                            <property name="paddingTop">3pt</property>
+                                            <label id="842">
+                                                <text-property name="text">Protección canaria</text-property>
+                                            </label>
+                                        </cell>
+                                        <cell id="820">
+                                            <property name="paddingTop">3pt</property>
+                                            <data id="859">
+                                                <property name="dataSet">SpeciesInfo</property>
+                                                <list-property name="boundDataColumns">
+                                                    <structure>
+                                                        <property name="name">CanaryProtectionName</property>
+                                                        <text-property name="displayName">CanaryProtectionName</text-property>
+                                                        <expression name="expression" type="javascript">dataSetRow["CanaryProtectionName"]</expression>
+                                                        <property name="dataType">string</property>
+                                                    </structure>
+                                                </list-property>
+                                                <property name="resultSetColumn">CanaryProtectionName</property>
+                                            </data>
+                                        </cell>
+                                    </row>
+                                    <row id="821">
+                                        <cell id="822">
+                                            <property name="paddingTop">3pt</property>
+                                            <label id="851">
+                                                <text-property name="text">Ecología</text-property>
+                                            </label>
+                                        </cell>
+                                        <cell id="823">
+                                            <property name="paddingTop">3pt</property>
+                                            <data id="862">
+                                                <property name="dataSet">SpeciesInfo</property>
+                                                <list-property name="boundDataColumns">
+                                                    <structure>
+                                                        <property name="name">EcologyName</property>
+                                                        <text-property name="displayName">EcologyName</text-property>
+                                                        <expression name="expression" type="javascript">dataSetRow["EcologyName"]</expression>
+                                                        <property name="dataType">string</property>
+                                                    </structure>
+                                                </list-property>
+                                                <property name="resultSetColumn">EcologyName</property>
+                                            </data>
+                                        </cell>
+                                    </row>
+                                    <row id="824">
+                                        <cell id="825">
+                                            <property name="paddingTop">3pt</property>
+                                            <label id="852">
+                                                <text-property name="text">Endemicidad</text-property>
+                                            </label>
+                                        </cell>
+                                        <cell id="826">
+                                            <property name="paddingTop">3pt</property>
+                                            <data id="861">
+                                                <property name="dataSet">SpeciesInfo</property>
+                                                <list-property name="boundDataColumns">
+                                                    <structure>
+                                                        <property name="name">EndemicityName</property>
+                                                        <text-property name="displayName">EndemicityName</text-property>
+                                                        <expression name="expression" type="javascript">dataSetRow["EndemicityName"]</expression>
+                                                        <property name="dataType">string</property>
+                                                    </structure>
+                                                </list-property>
+                                                <property name="resultSetColumn">EndemicityName</property>
+                                            </data>
+                                        </cell>
+                                    </row>
+                                    <row id="827">
+                                        <cell id="828">
+                                            <property name="paddingTop">3pt</property>
+                                            <label id="853">
+                                                <text-property name="text">Protección europea</text-property>
+                                            </label>
+                                        </cell>
+                                        <cell id="829">
+                                            <property name="paddingTop">3pt</property>
+                                            <data id="860">
+                                                <property name="dataSet">SpeciesInfo</property>
+                                                <list-property name="boundDataColumns">
+                                                    <structure>
+                                                        <property name="name">EuProtectionName</property>
+                                                        <text-property name="displayName">EuProtectionName</text-property>
+                                                        <expression name="expression" type="javascript">dataSetRow["EuProtectionName"]</expression>
+                                                        <property name="dataType">string</property>
+                                                    </structure>
+                                                </list-property>
+                                                <property name="resultSetColumn">EuProtectionName</property>
+                                            </data>
+                                        </cell>
+                                    </row>
+                                    <row id="830">
+                                        <cell id="831">
+                                            <property name="paddingTop">3pt</property>
+                                            <label id="854">
+                                                <text-property name="text">Interés</text-property>
+                                            </label>
+                                        </cell>
+                                        <cell id="832">
+                                            <property name="paddingTop">3pt</property>
+                                            <data id="863">
+                                                <property name="dataSet">SpeciesInfo</property>
+                                                <list-property name="boundDataColumns">
+                                                    <structure>
+                                                        <property name="name">InterestName</property>
+                                                        <text-property name="displayName">InterestName</text-property>
+                                                        <expression name="expression" type="javascript">dataSetRow["InterestName"]</expression>
+                                                        <property name="dataType">string</property>
+                                                    </structure>
+                                                </list-property>
+                                                <property name="resultSetColumn">InterestName</property>
+                                            </data>
+                                        </cell>
+                                    </row>
+                                    <row id="833">
+                                        <cell id="834">
+                                            <property name="paddingTop">3pt</property>
+                                            <label id="855">
+                                                <text-property name="text">Presencia</text-property>
+                                            </label>
+                                        </cell>
+                                        <cell id="835">
+                                            <property name="paddingTop">3pt</property>
+                                            <data id="864">
+                                                <property name="dataSet">SpeciesInfo</property>
+                                                <list-property name="boundDataColumns">
+                                                    <structure>
+                                                        <property name="name">PermanenceName</property>
+                                                        <text-property name="displayName">PermanenceName</text-property>
+                                                        <expression name="expression" type="javascript">dataSetRow["PermanenceName"]</expression>
+                                                        <property name="dataType">string</property>
+                                                    </structure>
+                                                </list-property>
+                                                <property name="resultSetColumn">PermanenceName</property>
+                                            </data>
+                                        </cell>
+                                    </row>
+                                    <row id="836">
+                                        <cell id="837">
+                                            <property name="paddingTop">3pt</property>
+                                            <label id="856">
+                                                <text-property name="text">Protección española</text-property>
+                                            </label>
+                                        </cell>
+                                        <cell id="838">
+                                            <property name="paddingTop">3pt</property>
+                                            <data id="865">
+                                                <property name="dataSet">SpeciesInfo</property>
+                                                <list-property name="boundDataColumns">
+                                                    <structure>
+                                                        <property name="name">SpainProtectionName</property>
+                                                        <text-property name="displayName">SpainProtectionName</text-property>
+                                                        <expression name="expression" type="javascript">dataSetRow["SpainProtectionName"]</expression>
+                                                        <property name="dataType">string</property>
+                                                    </structure>
+                                                </list-property>
+                                                <property name="resultSetColumn">SpainProtectionName</property>
+                                            </data>
+                                        </cell>
+                                    </row>
+                                    <row id="839">
+                                        <cell id="840">
+                                            <property name="paddingTop">3pt</property>
+                                            <label id="857">
+                                                <text-property name="text">Origen</text-property>
+                                            </label>
+                                        </cell>
+                                        <cell id="841">
+                                            <property name="paddingTop">3pt</property>
+                                            <data id="866">
+                                                <property name="dataSet">SpeciesInfo</property>
+                                                <list-property name="boundDataColumns">
+                                                    <structure>
+                                                        <property name="name">OriginName</property>
+                                                        <text-property name="displayName">OriginName</text-property>
+                                                        <expression name="expression" type="javascript">dataSetRow["OriginName"]</expression>
+                                                        <property name="dataType">string</property>
+                                                    </structure>
+                                                </list-property>
+                                                <property name="resultSetColumn">OriginName</property>
+                                            </data>
+                                        </cell>
+                                    </row>
+                                    <row id="1360">
+                                        <cell id="1361">
+                                            <property name="paddingTop">3pt</property>
+                                            <label id="1363">
+                                                <text-property name="text">Régimen trófico</text-property>
+                                            </label>
+                                        </cell>
+                                        <cell id="1362">
+                                            <property name="paddingTop">3pt</property>
+                                            <data id="1364">
+                                                <property name="dataSet">SpeciesInfo</property>
+                                                <list-property name="boundDataColumns">
+                                                    <structure>
+                                                        <property name="name">TrophicRegimeName</property>
+                                                        <text-property name="displayName">TrophicRegimeName</text-property>
+                                                        <expression name="expression" type="javascript">dataSetRow["TrophicRegimeName"]</expression>
+                                                        <property name="dataType">string</property>
+                                                    </structure>
+                                                </list-property>
+                                                <property name="resultSetColumn">TrophicRegimeName</property>
+                                            </data>
+                                        </cell>
+                                    </row>
+                                </grid>
+                            </cell>
+                            <cell id="814">
+                                <property name="textAlign">center</property>
+                                <property name="verticalAlign">middle</property>
+                                <image id="850">
+                                    <property name="width">100%</property>
+                                    <property name="dataSet">SpeciesInfo</property>
+                                    <list-property name="visibility">
+                                        <structure>
+                                            <property name="format">all</property>
+                                            <expression name="valueExpr" type="javascript">row["Image"] == null || !row["Image"].length</expression>
+                                        </structure>
+                                    </list-property>
+                                    <list-property name="boundDataColumns">
+                                        <structure>
+                                            <property name="name">Image</property>
+                                            <text-property name="displayName">Image</text-property>
+                                            <expression name="expression" type="javascript">dataSetRow["Image"]</expression>
+                                            <property name="dataType">string</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="source">url</property>
+                                    <expression name="uri" type="javascript">params["RedmicProtocol"].value + params["RedmicDomain"].value + row["Image"]</expression>
+                                </image>
+                                <image id="1233">
+                                    <property name="fontFamily">serif</property>
+                                    <property name="fontSize">10pt</property>
+                                    <property name="fontWeight">normal</property>
+                                    <property name="fontStyle">normal</property>
+                                    <property name="fontVariant">normal</property>
+                                    <property name="color">black</property>
+                                    <property name="textLineThrough">none</property>
+                                    <property name="textOverline">none</property>
+                                    <property name="textUnderline">none</property>
+                                    <property name="borderBottomColor">black</property>
+                                    <property name="borderBottomStyle">none</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftColor">black</property>
+                                    <property name="borderLeftStyle">none</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightColor">black</property>
+                                    <property name="borderRightStyle">none</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopColor">black</property>
+                                    <property name="borderTopStyle">none</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="marginTop">0pt</property>
+                                    <property name="marginLeft">0pt</property>
+                                    <property name="marginBottom">0pt</property>
+                                    <property name="marginRight">0pt</property>
+                                    <property name="paddingTop">1pt</property>
+                                    <property name="paddingLeft">1pt</property>
+                                    <property name="paddingBottom">1pt</property>
+                                    <property name="paddingRight">1pt</property>
+                                    <property name="textAlign">center</property>
+                                    <property name="display">block</property>
+                                    <property name="pageBreakAfter">auto</property>
+                                    <property name="pageBreakBefore">auto</property>
+                                    <property name="pageBreakInside">auto</property>
+                                    <property name="showIfBlank">false</property>
+                                    <property name="overflow">hidden</property>
+                                    <property name="dataSet">SpeciesInfo</property>
+                                    <list-property name="visibility">
+                                        <structure>
+                                            <property name="format">all</property>
+                                            <expression name="valueExpr" type="javascript">!!row["Image"]</expression>
+                                        </structure>
+                                    </list-property>
+                                    <list-property name="boundDataColumns">
+                                        <structure>
+                                            <property name="name">Image</property>
+                                            <text-property name="displayName">Image</text-property>
+                                            <expression name="expression" type="javascript">dataSetRow["Image"]</expression>
+                                            <property name="dataType">string</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="source">file</property>
+                                    <expression name="uri" type="javascript">params["EmptyImage"].value</expression>
+                                </image>
+                            </cell>
+                        </row>
+                    </grid>
+                </cell>
+            </row>
+            <row id="867">
+                <cell id="868">
+                    <property name="borderBottomStyle">none</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderTopStyle">none</property>
+                    <grid id="1071">
+                        <column id="1072"/>
+                        <row id="1074">
+                            <cell id="1075">
+                                <property name="paddingTop">10pt</property>
+                                <list id="1083">
+                                    <property name="dataSet">SpeciesDocuments</property>
+                                    <list-property name="boundDataColumns">
+                                        <structure>
+                                            <property name="name">Title</property>
+                                            <text-property name="displayName">Title</text-property>
+                                            <expression name="expression" type="javascript">dataSetRow["Title"]</expression>
+                                            <property name="dataType">string</property>
+                                            <property name="allowExport">true</property>
+                                        </structure>
+                                        <structure>
+                                            <property name="name">Author</property>
+                                            <text-property name="displayName">Author</text-property>
+                                            <expression name="expression" type="javascript">dataSetRow["Author"]</expression>
+                                            <property name="dataType">string</property>
+                                        </structure>
+                                        <structure>
+                                            <property name="name">Code</property>
+                                            <text-property name="displayName">Code</text-property>
+                                            <expression name="expression" type="javascript">dataSetRow["Code"]</expression>
+                                            <property name="dataType">string</property>
+                                        </structure>
+                                    </list-property>
+                                    <header>
+                                        <label id="1084">
+                                            <property name="fontSize">12pt</property>
+                                            <property name="fontWeight">bold</property>
+                                            <property name="borderBottomColor">#297691</property>
+                                            <property name="borderBottomStyle">solid</property>
+                                            <property name="borderBottomWidth">thin</property>
+                                            <property name="marginBottom">3pt</property>
+                                            <property name="paddingBottom">3pt</property>
+                                            <text-property name="text">Documentos con citas</text-property>
+                                        </label>
+                                    </header>
+                                    <detail>
+                                        <grid id="1305">
+                                            <property name="marginTop">3pt</property>
+                                            <property name="marginLeft">10pt</property>
+                                            <property name="marginBottom">3pt</property>
+                                            <property name="pageBreakInside">avoid</property>
+                                            <list-property name="visibility">
+                                                <structure>
+                                                    <property name="format">all</property>
+                                                    <expression name="valueExpr" type="javascript">row["Title"] == null || !row["Title"].length</expression>
+                                                </structure>
+                                            </list-property>
+                                            <column id="1306"/>
+                                            <row id="1307">
+                                                <cell id="1308">
+                                                    <data id="1120">
+                                                        <property name="fontWeight">bold</property>
+                                                        <property name="resultSetColumn">Title</property>
+                                                    </data>
+                                                </cell>
+                                            </row>
+                                            <row id="1309">
+                                                <cell id="1310">
+                                                    <data id="1313">
+                                                        <property name="resultSetColumn">Author</property>
+                                                    </data>
+                                                </cell>
+                                            </row>
+                                            <row id="1311">
+                                                <cell id="1312">
+                                                    <data id="1314">
+                                                        <property name="resultSetColumn">Code</property>
+                                                    </data>
+                                                </cell>
+                                            </row>
+                                        </grid>
+                                    </detail>
+                                    <footer>
+                                        <data id="1349">
+                                            <list-property name="visibility">
+                                                <structure>
+                                                    <property name="format">all</property>
+                                                    <expression name="valueExpr" type="javascript">!!row["Title"]</expression>
+                                                </structure>
+                                            </list-property>
+                                            <list-property name="boundDataColumns">
+                                                <structure>
+                                                    <property name="name">NoDataMessage</property>
+                                                    <expression name="expression" type="javascript">params["NoDataMessage"]</expression>
+                                                    <property name="dataType">string</property>
+                                                </structure>
+                                            </list-property>
+                                            <property name="resultSetColumn">NoDataMessage</property>
+                                        </data>
+                                    </footer>
+                                </list>
+                            </cell>
+                        </row>
+                        <row id="1259">
+                            <cell id="1260">
+                                <property name="paddingTop">10pt</property>
+                                <list id="1077">
+                                    <property name="dataSet">SpeciesActivities</property>
+                                    <list-property name="boundDataColumns">
+                                        <structure>
+                                            <property name="name">Id</property>
+                                            <text-property name="displayName">Id</text-property>
+                                            <expression name="expression" type="javascript">dataSetRow["Id"]</expression>
+                                            <property name="dataType">float</property>
+                                        </structure>
+                                        <structure>
+                                            <property name="name">Name</property>
+                                            <text-property name="displayName">Name</text-property>
+                                            <expression name="expression" type="javascript">dataSetRow["Name"]</expression>
+                                            <property name="dataType">string</property>
+                                        </structure>
+                                        <structure>
+                                            <property name="name">Code</property>
+                                            <text-property name="displayName">Code</text-property>
+                                            <expression name="expression" type="javascript">dataSetRow["Code"]</expression>
+                                            <property name="dataType">string</property>
+                                        </structure>
+                                        <structure>
+                                            <property name="name">Description</property>
+                                            <text-property name="displayName">Description</text-property>
+                                            <expression name="expression" type="javascript">dataSetRow["Description"]</expression>
+                                            <property name="dataType">string</property>
+                                        </structure>
+                                    </list-property>
+                                    <header>
+                                        <label id="1079">
+                                            <property name="fontSize">12pt</property>
+                                            <property name="fontWeight">bold</property>
+                                            <property name="borderBottomColor">#297691</property>
+                                            <property name="borderBottomStyle">solid</property>
+                                            <property name="borderBottomWidth">thin</property>
+                                            <property name="marginBottom">3pt</property>
+                                            <property name="paddingBottom">3pt</property>
+                                            <text-property name="text">Otras actividades vinculadas</text-property>
+                                        </label>
+                                    </header>
+                                    <detail>
+                                        <grid id="1322">
+                                            <property name="marginTop">3pt</property>
+                                            <property name="marginLeft">10pt</property>
+                                            <property name="marginBottom">3pt</property>
+                                            <property name="pageBreakInside">avoid</property>
+                                            <list-property name="visibility">
+                                                <structure>
+                                                    <property name="format">all</property>
+                                                    <expression name="valueExpr" type="javascript">row["Name"] == null || !row["Name"].length</expression>
+                                                </structure>
+                                            </list-property>
+                                            <column id="1323"/>
+                                            <row id="1324">
+                                                <cell id="1325">
+                                                    <text-data id="1078">
+                                                        <expression name="valueExpr">"&lt;A href=\"" + params["RedmicProtocol"].value + params["RedmicDomain"].value + "/catalog/activity-info/" + row["Id"] + "\">" + row["Name"] + "&lt;/A>"</expression>
+                                                        <property name="contentType">html</property>
+                                                    </text-data>
+                                                </cell>
+                                            </row>
+                                            <row id="1326">
+                                                <cell id="1327">
+                                                    <data id="1331">
+                                                        <property name="resultSetColumn">Code</property>
+                                                    </data>
+                                                </cell>
+                                            </row>
+                                            <row id="1328">
+                                                <cell id="1329">
+                                                    <data id="1297">
+                                                        <property name="paddingTop">1pt</property>
+                                                        <property name="paddingLeft">1pt</property>
+                                                        <property name="paddingBottom">1pt</property>
+                                                        <property name="paddingRight">1pt</property>
+                                                        <property name="display">inline</property>
+                                                        <list-property name="visibility">
+                                                            <structure>
+                                                                <property name="format">all</property>
+                                                                <expression name="valueExpr" type="javascript">!!row._outer["Description"]</expression>
+                                                            </structure>
+                                                        </list-property>
+                                                        <list-property name="boundDataColumns">
+                                                            <structure>
+                                                                <property name="name">NoDataMessage</property>
+                                                                <expression name="expression" type="javascript">params["NoDataMessage"]</expression>
+                                                                <property name="dataType">string</property>
+                                                            </structure>
+                                                            <structure>
+                                                                <property name="name">Description</property>
+                                                                <text-property name="displayName">Description</text-property>
+                                                                <expression name="expression" type="javascript">dataSetRow["Description"]</expression>
+                                                                <property name="dataType">string</property>
+                                                            </structure>
+                                                        </list-property>
+                                                        <property name="resultSetColumn">NoDataMessage</property>
+                                                    </data>
+                                                    <data id="1332">
+                                                        <property name="display">inline</property>
+                                                        <property name="resultSetColumn">Description</property>
+                                                    </data>
+                                                </cell>
+                                            </row>
+                                        </grid>
+                                    </detail>
+                                    <footer>
+                                        <data id="1348">
+                                            <list-property name="visibility">
+                                                <structure>
+                                                    <property name="format">all</property>
+                                                    <expression name="valueExpr" type="javascript">!!row["Name"]</expression>
+                                                </structure>
+                                            </list-property>
+                                            <list-property name="boundDataColumns">
+                                                <structure>
+                                                    <property name="name">NoDataMessage</property>
+                                                    <expression name="expression" type="javascript">params["NoDataMessage"]</expression>
+                                                    <property name="dataType">string</property>
+                                                </structure>
+                                            </list-property>
+                                            <property name="resultSetColumn">NoDataMessage</property>
+                                        </data>
+                                    </footer>
+                                </list>
+                            </cell>
+                        </row>
+                    </grid>
+                </cell>
+            </row>
+        </grid>
+        <data id="1287">
+            <property name="fontSize">9pt</property>
+            <property name="fontWeight">normal</property>
+            <property name="borderBottomColor">#297691</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1px</property>
+            <property name="borderLeftColor">#297691</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1px</property>
+            <property name="borderRightColor">#297691</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1px</property>
+            <property name="borderTopColor">#297691</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1px</property>
+            <property name="marginTop">50pt</property>
+            <property name="paddingTop">5pt</property>
+            <property name="paddingLeft">5pt</property>
+            <property name="paddingBottom">5pt</property>
+            <property name="paddingRight">5pt</property>
+            <property name="textAlign">justify</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">Disclaimer</property>
+                    <expression name="expression" type="javascript">params["Disclaimer"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="resultSetColumn">Disclaimer</property>
+        </data>
+    </body>
+</report>

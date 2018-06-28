@@ -1,0 +1,51 @@
+{
+	"species": {
+		"id": 14618,
+		"aphia": 126970,
+		"authorship": "(Linnaeus, 1758)",
+		"scientificName": "Thalassoma pavo",
+		"commonName": "Peje verde",
+		"groupIcon": "fr-fish",
+		"validAs": null,
+		"status": {
+			"id": 1,
+			"name": "accepted",
+			"name_en": "accepted"
+		}
+	},
+	"kingdom": {
+		"id": 1,
+		"scientificName": "Animalia",
+		"aphia": 2
+	},
+	"phylum": {
+		"id": 13,
+		"scientificName": "Chordata",
+		"aphia": 1821
+	},
+	"subphylum": {
+		"id": 148,
+		"scientificName": "Vertebrata",
+		"aphia": 146419
+	},
+	"class": {
+		"id": 16342,
+		"scientificName": "Actinopteri",
+		"aphia": 843664
+	},
+	"order": {
+		"id": 455,
+		"scientificName": "Perciformes",
+		"aphia": 11014
+	},
+	"family": {
+		"id": 1570,
+		"scientificName": "Labridae",
+		"aphia": 125541
+	},
+	"genus": {
+		"id": 4833,
+		"scientificName": "Thalassoma",
+		"aphia": 126024
+	}
+}

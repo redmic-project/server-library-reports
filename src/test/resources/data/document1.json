@@ -1,0 +1,52 @@
+{
+	"document": {
+		"id": 344,
+		"code": "BibOAG-03179",
+		"title": "Noticia de nuevos táxones para la ciencia en el ámbito íbero-balear y macaronésico",
+		"author": "Fernández, J.",
+		"year": 1998,
+		"source": "Graellsia, 54: 143-168.",
+		"language": "es",
+		"keyword": "Canarias,REDMIC,Taxonomía",
+		"note": "Nota",
+		"url": "/api/mediastorage/documents/BibOAG-03179.pdf",
+		"inserted": "2014-12-19T13:09:58.311+00:00",
+		"updated": "2016-08-16T13:48:40.401+01:00",
+		"documentType": {
+			"id": 4,
+			"name": "Artículo de revista",
+			"name_en": "Journal article",
+			"code": "P"
+		}
+	},
+	"activities": [{
+		"id": 1002,
+		"code": "Agua_Gr.2015",
+		"name": "Analítica de aguas en la costa de Granadilla 2015",
+		"activityType": {
+			"id": 4,
+			"name": "Análisis de aguas",
+			"name_en": "Water analytics",
+			"description": "Toma de una muestra de aguas (Sample) de modo puntual (SurveyPoint + InstantData) o regular (SurveyStation + Data¬Series + Time Series Definition. La muestra es llevada a un laboratorio para su análisis posterior (a especificar en Activity a través de ActivityRole + Orga¬ni¬sation). El lugar de muestreo puede ser puntual o regular, y los valores obtenidos se registran en de modo análogo al explicado en el epígrafe anterior (Measurement + Instant-data/Time¬Series). Lo que suele cambiar en esta actividad es el tipo de parámetro medido, que abarca el espectro de toda la analítica de aguas (metales pesados, nutrientes, pesticidas, etc.) incluyendo algunos oceanográficos como la turbidez, contenido en clorofila, materia orgánica disuelta, etc..",
+			"activityField": {
+				"id": 4,
+				"name": "Física Química",
+				"name_en": "Physic - Chemical"
+			}
+		}
+	}, {
+		"id": 871,
+		"code": "VDOC-04758",
+		"name": "NOTES on the biology of the deep-sea crab Paramola cuvieri (RISSO, 1816) (decapoda, homolidae) in the Canary islands (Central-East Atlantic)",
+		"activityType": {
+			"id": 10,
+			"name": "Corología documentada",
+			"name_en": "Documented chorology",
+			"activityField": {
+				"id": 5,
+				"name_en": "Biodiversity",
+				"name": "Biodiversidad"
+			}
+		}
+	}]
+}

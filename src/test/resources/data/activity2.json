@@ -1,0 +1,16 @@
+{
+    "program": {
+        "id": 1,
+        "name": "Banco de datos de especies marinas de la Macaronesia"
+    },
+    "project": {
+        "id": 12,
+        "name": "Banco de datos de especies marinas de Canarias (DIADEMA)"
+    },
+	"activity": {
+		"id": 871,
+		"code": "VDOC-04758",
+		"name": "NOTES on the biology of the deep-sea crab Paramola cuvieri (RISSO, 1816) (decapoda, homolidae) in the Canary islands (Central-East Atlantic)",
+		"description": "Descripción cualquiera."
+	}
+}

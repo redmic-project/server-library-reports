@@ -1,0 +1,193 @@
+{
+	"projectWrappers": [{
+		"project": {
+			"id": 35,
+			"code": "CET_001",
+			"name": "Estudio de conservación de las poblaciones de calderones tropicales (Globicephala macrorhynchus) y delfines mulares (Tursiops truncatus) en la costa suroeste de Tenerife"
+		},
+		"activities": [{
+			"id": 1002,
+			"code": "Agua_Gr.2015",
+			"name": "Analítica de aguas en la costa de Granadilla 2015"
+		}, {
+			"id": 871,
+			"code": "VDOC-04758",
+			"name": "NOTES on the biology of the deep-sea crab Paramola cuvieri (RISSO, 1816) (decapoda, homolidae) in the Canary islands (Central-East Atlantic)"
+		}]
+	}, {
+		"project": {
+			"id": 23,
+			"code": "PMCA_TF1",
+			"name": "Monitorización de calidad de aguas portuarias en la provincia de Santa Cruz de Tenerife 2010-2012"
+		}
+	}],
+	"program": {
+		"id": 1,
+		"path": "root.1",
+		"code": "Diadema",
+		"name": "Banco de datos de especies marinas de la Macaronesia",
+		"description": "Registro actualizado de la distribución geográfica de especies marinas en el ámbito de la Macaronesia.",
+		"note": "Probando",
+		"startDate": "2009-01-01T00:00:00.000+00:00",
+		"endDate": "2010-01-01T00:00:00.000+00:00",
+		"updated": "2017-02-22T07:24:26.699+00:00",
+		"accessibility": {
+			"id": 2,
+			"name": "Libre",
+			"name_en": "Free"
+		},
+		"scope": {
+			"id": 7,
+			"name": "Macaronésico",
+			"name_en": "Macaronesia"
+		},
+		"documents": [{
+			"document": {
+				"id": 4713,
+				"title": "Corales de las islas Canarias. Antozoos con esqueleto de los fondos litorales y profundos",
+				"url": "/api/mediastorage/documents/BibOAG_00241.pdf"
+			}
+		}, {
+			"document": {
+				"id": 3530,
+				"title": "Die europäischen Meeres-Gehäuseschnecken: (Prosobranchia); vom Eismeer bis Kapverden, Mittelmeer und Schwarzes Meer",
+				"url": null
+			}
+		}, {
+			"document": {
+				"id": 4216,
+				"title": "Revision der monegassischen Solenogastres (Mollusca, Aculifera)",
+				"url": "/api/mediastorage/documents/BibOAG_02026.pdf"
+			}
+		}],
+		"platforms": [{
+			"startDate": "2014-06-06T00:00:00.000+01:00",
+			"endDate": "2015-08-05T13:59:54.859+01:00",
+			"platform": {
+				"id": 2,
+				"name": "Zodiac-LZ",
+				"image": "/api/mediastorage/photobank/platforms/boya_oag_granadilla.jpg"
+			},
+			"contact": {
+				"id": 6,
+				"firstName": "Ainoa",
+				"surname": "Poladura Martín"
+			},
+			"role": {
+				"id": 1,
+				"name_en": "Other",
+				"name": "Otro"
+			}
+		}, {
+			"startDate": "2014-06-06T00:00:00.000+01:00",
+			"endDate": "2015-08-05T13:59:54.859+01:00",
+			"platform": {
+				"id": 1,
+				"name": "Avatar",
+				"image": "/api/mediastorage/photobank/platforms/boya_oag_granadilla.jpg"
+			},
+			"contact": {
+				"id": 1,
+				"firstName": "Ignacio",
+				"surname": "Lorenzo García"
+			},
+			"role": {
+				"id": 1,
+				"name_en": "Other",
+				"name": "Otro"
+			}
+		}],
+		"contacts": [{
+			"id": 770,
+			"contact": {
+				"id": 24,
+				"surname": "González Castromil",
+				"firstName": "Miguel"
+			},
+			"organisation": {
+				"id": 27,
+				"name": "Laboratorio de análisis y calidad medioambiental Indrops",
+				"acronym": "Indrops",
+				"logo": "/api/mediastorage/photobank/organisations/logo_oag.jpg"
+			},
+			"role": {
+				"id": 4,
+				"name": "Supervisor/a",
+				"name_en": "Supervisor"
+			},
+			"startDate": null,
+			"endDate": null
+		}, {
+			"id": 768,
+			"contact": {
+				"id": 25,
+				"surname": "Lago Fariña",
+				"firstName": "Jorge"
+			},
+			"organisation": {
+				"id": 1,
+				"name": "Observatorio Ambiental Granadilla.",
+				"acronym": "OAG",
+				"logo": "/api/mediastorage/photobank/organisations/logo_oag.jpg"
+			},
+			"role": {
+				"id": 14,
+				"name": "Patrón",
+				"name_en": "Skipper"
+			},
+			"startDate": null,
+			"endDate": null
+		}, {
+			"id": 769,
+			"contact": {
+				"id": 7,
+				"surname": "Espinosa Gutiérrez",
+				"firstName": "José María"
+			},
+			"organisation": {
+				"id": 1,
+				"name": "Observatorio Ambiental Granadilla.",
+				"acronym": "OAG",
+				"logo": "/api/mediastorage/photobank/organisations/logo_oag.jpg"
+			},
+			"role": {
+				"id": 4,
+				"name": "Supervisor/a",
+				"name_en": "Supervisor"
+			},
+			"startDate": null,
+			"endDate": null
+		}],
+		"organisations": [{
+			"id": 32,
+			"organisation": {
+				"id": 16,
+				"name": "Puertos del Estado",
+				"acronym": "PE",
+				"logo": "/api/mediastorage/photobank/organisations/logo_oag.jpg"
+			},
+			"startDate": null,
+			"endDate": null,
+			"role": {
+				"id": 2,
+				"name": "Promotora",
+				"name_en": "Promoter"
+			}
+		}, {
+			"id": 33,
+			"organisation": {
+				"id": 1,
+				"name": "Observatorio Ambiental Granadilla.",
+				"acronym": "OAG",
+				"logo": "/api/mediastorage/photobank/organisations/logo_oag.jpg"
+			},
+			"startDate": null,
+			"endDate": null,
+			"role": {
+				"id": 9,
+				"name": "Ejecutora",
+				"name_en": "Manager"
+			}
+		}]
+	}
+}

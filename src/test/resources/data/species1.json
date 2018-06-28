@@ -1,0 +1,662 @@
+{
+	"species": {
+		"id": 7900,
+		"path": "root.1.16.169.439.1168.3250.7900",
+		"aphia": 140605,
+		"authorship": "Cuvier, 1797",
+		"scientificName": "Octopus vulgaris",
+		"commonName": "Pulpo",
+		"popularNames": "pulpito,purrrpito",
+		"note": "Nota anotada",
+		"image": "/api/mediastorage/photobank/species/Octopus_vulgaris.jpg",
+		"euDirective": null,
+		"canaryCatalogue": null,
+		"spainCatalogue": null,
+		"worms": "http://www.marinespecies.org/aphia.php?p=taxdetails&id=140605",
+		"groupIcon": "fr-moluscos",
+		"updated": "2016-05-20T11:34:35.559+00:00",
+		"leaves": 0,
+		"validAs": {
+			"id": 16311,
+			"commonName": null,
+			"rank": {
+				"id": 10,
+				"name_en": "Species",
+				"name": "Species"
+			},
+			"scientificName": "Protoperidinium excentricum",
+			"authorship": "(Paulsen) Balech, 1974",
+			"aphia": 110220,
+			"path": "root.6.28.157.237.456.1670.4663.16311"
+		},
+		"status": {
+			"id": 1,
+			"name": "accepted",
+			"name_en": "accepted"
+		},
+		"rank": {
+			"id": 10,
+			"name": "Species",
+			"name_en": "Species"
+		},
+		"parent": {
+			"id": 3250,
+			"authorship": "Cuvier, 1798",
+			"path": "root.1.16.169.439.1168.3250",
+			"scientificName": "Octopus"
+		},
+		"ecology": {
+			"id": 1,
+			"name": "Sin derfinir",
+			"name_en": "Undefined"
+		},
+		"endemicity": {
+			"id": 1,
+			"name": "Sin definir",
+			"name_en": "Undefined"
+		},
+		"interest": {
+			"id": 1,
+			"name": "Otro",
+			"name_en": "Other"
+		},
+		"origin": {
+			"id": 1,
+			"name": "Sin definir",
+			"name_en": "Undefined"
+		},
+		"permanence": {
+			"id": 1,
+			"name": "Desconocida",
+			"name_en": "Unknown"
+		},
+		"spainProtection": {
+			"id": 4,
+			"name": "Protección especial",
+			"name_en": "Special protection"
+		},
+		"canaryProtection": {
+			"id": 1,
+			"name": "No catalogada",
+			"name_en": "Not recorded"
+		},
+		"euProtection": {
+			"id": 1,
+			"name": "No registrada",
+			"name_en": "Not recorded"
+		},
+		"trophicRegime": {
+			"id": 1,
+			"name": "Sin definir",
+			"name_en": "Undefined"
+		}
+	},
+	"kingdom": {
+		"id": 1,
+		"rank": {
+			"id": 1,
+			"name_en": "Kingdom",
+			"name": "Kingdom"
+		},
+		"scientificName": "Animalia",
+		"aphia": 2,
+		"path": "root.1"
+	},
+	"phylum": {
+		"id": 16,
+		"rank": {
+			"id": 3,
+			"name_en": "Phylum",
+			"name": "Phylum"
+		},
+		"scientificName": "Mollusca",
+		"aphia": 51,
+		"path": "root.1.16"
+	},
+	"class": {
+		"id": 169,
+		"rank": {
+			"id": 6,
+			"name_en": "Class",
+			"name": "Class"
+		},
+		"scientificName": "Cephalopoda",
+		"aphia": 11707,
+		"path": "root.1.16.169"
+	},
+	"order": {
+		"id": 439,
+		"rank": {
+			"id": 7,
+			"name_en": "Order",
+			"name": "Order"
+		},
+		"scientificName": "Octopoda",
+		"aphia": 11718,
+		"path": "root.1.16.169.439"
+	},
+	"family": {
+		"id": 1168,
+		"rank": {
+			"id": 8,
+			"name_en": "Family",
+			"name": "Family"
+		},
+		"scientificName": "Octopodidae",
+		"aphia": 11782,
+		"path": "root.1.16.169.439.1168"
+	},
+	"genus": {
+		"id": 3250,
+		"rank": {
+			"id": 9,
+			"name_en": "Genus",
+			"name": "Genus"
+		},
+		"scientificName": "Octopus",
+		"aphia": 138268,
+		"path": "root.1.16.169.439.1168.3250"
+	},
+	"documents": [{
+		"id": 4875,
+		"title": " (Solari, A. P., Castro Hernández, J. J. & Bas Peired, C. 2003) Especies indicadoras: un nuevo concepto para el control y gestión de la pesca con nasas en Canarias",
+		"author": "Solari, A. P., Castro Hernández, J. J. & Bas Peired, C.",
+		"year": 2003,
+		"url": "/api/mediastorage/documents/BibOAG-02088.pdf",
+		"code": "BibOAG-02088",
+		"source": "Vector Plus, 21: 59-69.",
+		"language": "es",
+		"note": null,
+		"keyword": "Actinopterigios,Canarias,Cefalópodos,Fauna,Pesca,REDMIC",
+		"documentType": {
+			"id": 4,
+			"name": "Artículo de revista",
+			"name_en": "Journal article",
+			"code": null
+		},
+		"updated": "2014-12-19T13:09:58.311+00:00",
+		"inserted": null
+	}, {
+		"id": 4901,
+		"title": " (Caldentey, M. Á., Jiménez, S., González, J. A., Santana Morales, J. I., Carrillo Molina, J., Lozano Soldevilla, I. J., Brito, A., Lozano Soldevilla, G., Fanlo Dauphin, M. & Hernández Cruz, C. M. 1988) Resultados de la campaña de prospección pesquera \"Mogán 8806\"",
+		"author": "Caldentey, M. Á., Jiménez, S., González, J. A., Santana Morales, J. I., Carrillo Molina, J., Lozano Soldevilla, I. J., Brito, A., Lozano Soldevilla, G., Fanlo Dauphin, M. & Hernández Cruz, C. M.",
+		"year": 1988,
+		"url": "/api/mediastorage/documents/BibOAG-02156.pdf",
+		"code": "BibOAG-02156",
+		"source": "Departamento de Biología Animal (Ciencias Marinas), Universidad de La Laguna (Facultad de Biología, Universidad de La Laguna) 55 pp.",
+		"language": "es",
+		"note": null,
+		"keyword": "Actinopterigios,Canarias,Cefalópodos,Condríctios,Decápodos,Fauna,Pesca,REDMIC",
+		"documentType": {
+			"id": 11,
+			"name": "Estudios e informes",
+			"name_en": "Report",
+			"code": null
+		},
+		"updated": "2014-10-06T15:32:16.971+00:00",
+		"inserted": null
+	}],
+	"activities": [{
+		"id": 76,
+		"name": "Volcado de citas del documento BibOAG-00917",
+		"path": "root.1.12.76",
+		"code": "VDOC-00917",
+		"description": "Localización de especies contenidas en el documento: Praderas marinas de Zostera noltii (Zosteraceae) en las islas Canarias",
+		"note": "Código Biota-Mar nº FR0012",
+		"accessibility": {
+			"id": 2,
+			"name": "Libre",
+			"name_en": "Free"
+		},
+		"scope": null,
+		"documents": [{
+			"id": 30,
+			"document": {
+				"id": 4748,
+				"title": " (Gil-Rodríguez, M. C., Afonso Carrillo, J. & Wildpret de la Torre, W. 1987) Praderas marinas de Zostera noltii (Zosteraceae) en las islas Canarias",
+				"author": "Gil-Rodríguez, M. C., Afonso Carrillo, J. & Wildpret de la Torre, W.",
+				"year": 1987,
+				"url": "/api/mediastorage/documents/BibOAG-00917.pdf"
+			}
+		}],
+		"platforms": [],
+		"updated": "2016-05-11T07:13:52.048+00:00",
+		"contacts": [{
+			"id": 30,
+			"contact": {
+				"id": 6,
+				"surname": "Poladura Martín",
+				"image": "/api/mediastorage/photobank/contacts/Ainoa Poladura.JPG",
+				"firstName": "Ainoa"
+			},
+			"organisation": {
+				"id": 1,
+				"name": "Observatorio Ambiental Granadilla.",
+				"acronym": "OAG",
+				"logo": "/api/mediastorage/photobank/organisations/logo_oag.jpg"
+			},
+			"role": {
+				"id": 7,
+				"name": "Corólogo/a",
+				"name_en": "Corologist"
+			},
+			"startDate": null,
+			"endDate": null
+		}],
+		"organisations": [],
+		"parent": {
+			"id": 12,
+			"name": "Banco de datos de especies marinas de Canarias (DIADEMA)",
+			"path": "root.1.12"
+		},
+		"activityType": {
+			"id": 10,
+			"name": "Corología documentada",
+			"name_en": "Documented chorology",
+			"description": "Biológicas",
+			"activityField": {
+				"id": 5,
+				"name": "Biodiversidad",
+				"name_en": "Biodiversity"
+			}
+		},
+		"startDate": "2011-02-07T09:00:00.000+00:00",
+		"endDate": "2014-10-06T09:00:00.000+00:00"
+	}, {
+		"id": 195,
+		"name": "Volcado de citas del documento BibOAG-02037",
+		"path": "root.1.12.195",
+		"code": "VDOC-02037",
+		"description": "Localización de especies contenidas en el documento: Diversidad genética en el atlántico templado oriental: el caso de una angiosperma marina Zostera noltii",
+		"note": "Revisadas especies. Repetido",
+		"accessibility": {
+			"id": 2,
+			"name": "Libre",
+			"name_en": "Free"
+		},
+		"scope": null,
+		"documents": [{
+			"id": 144,
+			"document": {
+				"id": 4873,
+				"title": " (Hernández Ferrer, M. & Gil-Rodríguez, M. C. 2009) Diversidad genética en el atlántico templado oriental: el caso de una angiosperma marina Zostera noltii",
+				"author": "Hernández Ferrer, M. & Gil-Rodríguez, M. C.",
+				"year": 2009,
+				"url": "/api/mediastorage/documents/BibOAG-02037.pdf"
+			}
+		}],
+		"platforms": [],
+		"updated": "2016-05-11T07:13:52.048+00:00",
+		"contacts": [{
+			"id": 143,
+			"contact": {
+				"id": 20,
+				"surname": "Delgado González",
+				"image": null,
+				"firstName": "Fernando Javier"
+			},
+			"organisation": {
+				"id": 1,
+				"name": "Observatorio Ambiental Granadilla.",
+				"acronym": "OAG",
+				"logo": "/api/mediastorage/photobank/organisations/logo_oag.jpg"
+			},
+			"role": {
+				"id": 7,
+				"name": "Corólogo/a",
+				"name_en": "Corologist"
+			},
+			"startDate": null,
+			"endDate": null
+		}],
+		"organisations": [],
+		"parent": {
+			"id": 12,
+			"name": "Banco de datos de especies marinas de Canarias (DIADEMA)",
+			"path": "root.1.12"
+		},
+		"activityType": {
+			"id": 10,
+			"name": "Corología documentada",
+			"name_en": "Documented chorology",
+			"description": "Biológicas",
+			"activityField": {
+				"id": 5,
+				"name": "Biodiversidad",
+				"name_en": "Biodiversity"
+			}
+		},
+		"startDate": "2010-12-17T00:00:00.000+00:00",
+		"endDate": "2011-01-05T00:00:00.000+00:00"
+	}, {
+		"id": 297,
+		"name": "Volcado de citas del documento BibOAG-02406",
+		"path": "root.1.12.297",
+		"code": "VDOC-02406",
+		"description": "Localización de especies contenidas en el documento: Seguimiento de poblaciones de especies amenazadas (2007). Zostera noltii Hornemann",
+		"note": null,
+		"accessibility": {
+			"id": 2,
+			"name": "Libre",
+			"name_en": "Free"
+		},
+		"scope": null,
+		"documents": [{
+			"id": 239,
+			"document": {
+				"id": 4945,
+				"title": " (Docoito Díaz, J. R. & Herrera Morán, B. 2007) Seguimiento de poblaciones de especies amenazadas (2007). Zostera noltii Hornemann",
+				"author": "Docoito Díaz, J. R. & Herrera Morán, B.",
+				"year": 2007,
+				"url": "/api/mediastorage/documents/BibOAG-02406.pdf"
+			}
+		}],
+		"platforms": [],
+		"updated": "2016-05-11T07:13:52.048+00:00",
+		"contacts": [{
+			"id": 235,
+			"contact": {
+				"id": 6,
+				"surname": "Poladura Martín",
+				"image": "/api/mediastorage/photobank/contacts/Ainoa Poladura.JPG",
+				"firstName": "Ainoa"
+			},
+			"organisation": {
+				"id": 1,
+				"name": "Observatorio Ambiental Granadilla.",
+				"acronym": "OAG",
+				"logo": "/api/mediastorage/photobank/organisations/logo_oag.jpg"
+			},
+			"role": {
+				"id": 7,
+				"name": "Corólogo/a",
+				"name_en": "Corologist"
+			},
+			"startDate": null,
+			"endDate": null
+		}],
+		"organisations": [],
+		"parent": {
+			"id": 12,
+			"name": "Banco de datos de especies marinas de Canarias (DIADEMA)",
+			"path": "root.1.12"
+		},
+		"activityType": {
+			"id": 10,
+			"name": "Corología documentada",
+			"name_en": "Documented chorology",
+			"description": "Biológicas",
+			"activityField": {
+				"id": 5,
+				"name": "Biodiversidad",
+				"name_en": "Biodiversity"
+			}
+		},
+		"startDate": "2011-02-07T00:00:00.000+00:00",
+		"endDate": "2014-10-06T00:00:00.000+00:00"
+	}, {
+		"id": 352,
+		"name": "Volcado de citas del documento BibOAG-02783",
+		"path": "root.1.12.352",
+		"code": "VDOC-02783",
+		"description": "Localización de especies contenidas en el documento: Morfología y distribución de Nemalion helminthoides en las islas Canarias (Rhodophyta, Liagoraceae)",
+		"note": "Revisadas especies",
+		"accessibility": {
+			"id": 2,
+			"name": "Libre",
+			"name_en": "Free"
+		},
+		"scope": null,
+		"documents": [{
+			"id": 290,
+			"document": {
+				"id": 1934,
+				"title": " (O'Dwyer, J. A. & Afonso Carrillo, J. 2005) Morfología y distribución de Nemalion helminthoides en las islas Canarias (Rhodophyta, Liagoraceae)",
+				"author": "O'Dwyer, J. A. & Afonso Carrillo, J.",
+				"year": 2005,
+				"url": "/api/mediastorage/documents/BibOAG-02783.pdf"
+			}
+		}],
+		"platforms": [],
+		"updated": "2016-05-11T07:13:52.048+00:00",
+		"contacts": [{
+			"id": 287,
+			"contact": {
+				"id": 20,
+				"surname": "Delgado González",
+				"image": null,
+				"firstName": "Fernando Javier"
+			},
+			"organisation": {
+				"id": 1,
+				"name": "Observatorio Ambiental Granadilla.",
+				"acronym": "OAG",
+				"logo": "/api/mediastorage/photobank/organisations/logo_oag.jpg"
+			},
+			"role": {
+				"id": 7,
+				"name": "Corólogo/a",
+				"name_en": "Corologist"
+			},
+			"startDate": null,
+			"endDate": null
+		}],
+		"organisations": [],
+		"parent": {
+			"id": 12,
+			"name": "Banco de datos de especies marinas de Canarias (DIADEMA)",
+			"path": "root.1.12"
+		},
+		"activityType": {
+			"id": 10,
+			"name": "Corología documentada",
+			"name_en": "Documented chorology",
+			"description": "Biológicas",
+			"activityField": {
+				"id": 5,
+				"name": "Biodiversidad",
+				"name_en": "Biodiversity"
+			}
+		},
+		"startDate": "2010-12-17T00:00:00.000+00:00",
+		"endDate": "2011-01-05T00:00:00.000+00:00"
+	}, {
+		"id": 367,
+		"name": "Volcado de citas del documento BibOAG-02809",
+		"path": "root.1.12.367",
+		"code": "VDOC-02809",
+		"description": "Localización de especies contenidas en el documento: Caracterización genética de Zostera noltii (Zosteraceae, Magnoliophyta) en Lanzarote, islas Canarias.",
+		"note": null,
+		"accessibility": {
+			"id": 2,
+			"name": "Libre",
+			"name_en": "Free"
+		},
+		"scope": null,
+		"documents": [{
+			"id": 297,
+			"document": {
+				"id": 4997,
+				"title": " (Rumeu Ruiz, B., Pérez Pérez, J. A., Hernández Ferrer, M., Aldanondo Aristizabal, N. & Gil-Rodríguez, M. C. 2007) Caracterización genética de Zostera noltii (Zosteraceae, Magnoliophyta) en Lanzarote, islas Canarias.",
+				"author": "Rumeu Ruiz, B., Pérez Pérez, J. A., Hernández Ferrer, M., Aldanondo Aristizabal, N. & Gil-Rodríguez, M. C.",
+				"year": 2007,
+				"url": "/api/mediastorage/documents/BibOAG-02809.pdf"
+			}
+		}],
+		"platforms": [],
+		"updated": "2016-05-11T07:13:52.048+00:00",
+		"contacts": [{
+			"id": 295,
+			"contact": {
+				"id": 20,
+				"surname": "Delgado González",
+				"image": null,
+				"firstName": "Fernando Javier"
+			},
+			"organisation": {
+				"id": 1,
+				"name": "Observatorio Ambiental Granadilla.",
+				"acronym": "OAG",
+				"logo": "/api/mediastorage/photobank/organisations/logo_oag.jpg"
+			},
+			"role": {
+				"id": 7,
+				"name": "Corólogo/a",
+				"name_en": "Corologist"
+			},
+			"startDate": null,
+			"endDate": null
+		}],
+		"organisations": [],
+		"parent": {
+			"id": 12,
+			"name": "Banco de datos de especies marinas de Canarias (DIADEMA)",
+			"path": "root.1.12"
+		},
+		"activityType": {
+			"id": 10,
+			"name": "Corología documentada",
+			"name_en": "Documented chorology",
+			"description": "Biológicas",
+			"activityField": {
+				"id": 5,
+				"name": "Biodiversidad",
+				"name_en": "Biodiversity"
+			}
+		},
+		"startDate": "2010-12-17T00:00:00.000+00:00",
+		"endDate": "2011-01-05T00:00:00.000+00:00"
+	}, {
+		"id": 402,
+		"name": "Volcado de citas del documento BibOAG-02880",
+		"path": "root.1.12.402",
+		"code": "VDOC-02880",
+		"description": "Localización de especies contenidas en el documento: The possible origin of Zostera noltii in the Canary Islands and guidelines for restoration",
+		"note": null,
+		"accessibility": {
+			"id": 2,
+			"name": "Libre",
+			"name_en": "Free"
+		},
+		"scope": null,
+		"documents": [{
+			"id": 331,
+			"document": {
+				"id": 5028,
+				"title": " (Dieckmann, O. E., Gouveia, L., Pérez Pérez, J. A., Gil-Rodríguez, M. C. & Serrão, E. A. 2010) The possible origin of Zostera noltii in the Canary Islands and guidelines for restoration",
+				"author": "Dieckmann, O. E., Gouveia, L., Pérez Pérez, J. A., Gil-Rodríguez, M. C. & Serrão, E. A.",
+				"year": 2010,
+				"url": "/api/mediastorage/documents/BibOAG-02880.pdf"
+			}
+		}],
+		"platforms": [],
+		"updated": "2016-05-11T07:13:52.048+00:00",
+		"contacts": [{
+			"id": 328,
+			"contact": {
+				"id": 6,
+				"surname": "Poladura Martín",
+				"image": "/api/mediastorage/photobank/contacts/Ainoa Poladura.JPG",
+				"firstName": "Ainoa"
+			},
+			"organisation": {
+				"id": 1,
+				"name": "Observatorio Ambiental Granadilla.",
+				"acronym": "OAG",
+				"logo": "/api/mediastorage/photobank/organisations/logo_oag.jpg"
+			},
+			"role": {
+				"id": 7,
+				"name": "Corólogo/a",
+				"name_en": "Corologist"
+			},
+			"startDate": null,
+			"endDate": null
+		}],
+		"organisations": [],
+		"parent": {
+			"id": 12,
+			"name": "Banco de datos de especies marinas de Canarias (DIADEMA)",
+			"path": "root.1.12"
+		},
+		"activityType": {
+			"id": 10,
+			"name": "Corología documentada",
+			"name_en": "Documented chorology",
+			"description": "Biológicas",
+			"activityField": {
+				"id": 5,
+				"name": "Biodiversidad",
+				"name_en": "Biodiversity"
+			}
+		},
+		"startDate": "2011-02-07T00:00:00.000+00:00",
+		"endDate": "2014-10-06T00:00:00.000+00:00"
+	}, {
+		"id": 410,
+		"name": "Volcado de citas del documento BibOAG-02907",
+		"path": "root.1.12.410",
+		"code": "VDOC-02907",
+		"description": "Localización de especies contenidas en el documento: Parámetros de interés medioambiental en las praderas de Zoostera noltii (Magnoliophyta) de Lanzarote, islas Canarias",
+		"note": null,
+		"accessibility": {
+			"id": 2,
+			"name": "Libre",
+			"name_en": "Free"
+		},
+		"scope": null,
+		"documents": [{
+			"id": 339,
+			"document": {
+				"id": 5033,
+				"title": " (Aldanondo Aristizabal, N., González, V., Gil-Rodríguez, M. C. & Barquín Díez, J. 2006) Parámetros de interés medioambiental en las praderas de Zoostera noltii (Magnoliophyta) de Lanzarote, islas Canarias",
+				"author": "Aldanondo Aristizabal, N., González, V., Gil-Rodríguez, M. C. & Barquín Díez, J.",
+				"year": 2006,
+				"url": "/api/mediastorage/documents/BibOAG-02907.pdf"
+			}
+		}],
+		"platforms": [],
+		"updated": "2016-05-11T07:13:52.048+00:00",
+		"contacts": [{
+			"id": 336,
+			"contact": {
+				"id": 6,
+				"surname": "Poladura Martín",
+				"image": "/api/mediastorage/photobank/contacts/Ainoa Poladura.JPG",
+				"firstName": "Ainoa"
+			},
+			"organisation": {
+				"id": 1,
+				"name": "Observatorio Ambiental Granadilla.",
+				"acronym": "OAG",
+				"logo": "/api/mediastorage/photobank/organisations/logo_oag.jpg"
+			},
+			"role": {
+				"id": 7,
+				"name": "Corólogo/a",
+				"name_en": "Corologist"
+			},
+			"startDate": null,
+			"endDate": null
+		}],
+		"organisations": [],
+		"parent": {
+			"id": 12,
+			"name": "Banco de datos de especies marinas de Canarias (DIADEMA)",
+			"path": "root.1.12"
+		},
+		"activityType": {
+			"id": 10,
+			"name": "Corología documentada",
+			"name_en": "Documented chorology",
+			"description": "Biológicas",
+			"activityField": {
+				"id": 5,
+				"name": "Biodiversidad",
+				"name_en": "Biodiversity"
+			}
+		},
+		"startDate": "2011-02-07T00:00:00.000+00:00",
+		"endDate": "2014-10-06T00:00:00.000+00:00"
+	}]
+}

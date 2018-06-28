@@ -1,0 +1,12 @@
+{
+    "program": {
+        "id": 5,
+        "name": "Calidad de aguas portuarias"
+    },
+	"project": {
+		"id": 16,
+		"code": "METEO",
+		"name": "Seguimiento meteorológico en Canarias",
+		"description": "Compilación de datos meteorológicos registrados en estaciones próximas al mar"
+	}
+}

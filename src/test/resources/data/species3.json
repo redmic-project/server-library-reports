@@ -1,0 +1,46 @@
+{
+	"species": {
+		"id": 9165,
+		"aphia": 145796,
+		"authorship": "Hornemann",
+		"scientificName": "Zostera (Zosterella) noltei",
+		"commonName": null,
+		"groupIcon": "fr-algae",
+		"validAs": null,
+		"status": {
+			"id": 6,
+			"name": "unaccepted",
+			"name_en": "unaccepted"
+		}
+	},
+	"kingdom": {
+		"id": 1,
+		"scientificName": "Animalia",
+		"aphia": 2
+	},
+	"phylum": {
+		"id": 16,
+		"scientificName": "Mollusca",
+		"aphia": 51
+	},
+	"class": {
+		"id": 169,
+		"scientificName": "Cephalopoda",
+		"aphia": 11707
+	},
+	"order": {
+		"id": 439,
+		"scientificName": "Octopoda",
+		"aphia": 11718
+	},
+	"family": {
+		"id": 1168,
+		"scientificName": "Octopodidae",
+		"aphia": 11782
+	},
+	"genus": {
+		"id": 3250,
+		"scientificName": "Octopus",
+		"aphia": 138268
+	}
+}
