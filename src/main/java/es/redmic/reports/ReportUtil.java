@@ -25,7 +25,7 @@ public class ReportUtil {
 
 	static {
 		try {
-			CONFIG.setLogConfig("/tmp/birt.log", Level.FINEST);
+			CONFIG.setLogConfig(null, Level);
 			Platform.startup(CONFIG);
 		} catch (BirtException e) {
 			throw new IllegalArgumentException(e);
