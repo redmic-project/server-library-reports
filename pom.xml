@@ -13,7 +13,7 @@
 	<groupId>es.redmic.lib</groupId>
 	<artifactId>reports</artifactId>
 	<packaging>jar</packaging>
-	<version>0.7.0</version>
+	<version>0.7.0-feature-refactoring</version>
 	<name>Reports</name>
 	<description>Data reports library</description>
 
