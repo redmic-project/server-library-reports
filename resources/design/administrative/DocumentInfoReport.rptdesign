@@ -205,9 +205,9 @@
                                 <property name="dataType">float</property>
                             </structure>
                             <structure>
-                                <property name="name">Keyword</property>
-                                <text-property name="displayName">Keyword</text-property>
-                                <expression name="expression" type="javascript">dataSetRow["Keyword"]</expression>
+                                <property name="name">Keywords</property>
+                                <text-property name="displayName">Keywords</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["Keywords"]</expression>
                                 <property name="dataType">string</property>
                             </structure>
                             <structure>
@@ -217,9 +217,9 @@
                                 <property name="dataType">string</property>
                             </structure>
                             <structure>
-                                <property name="name">Note</property>
-                                <text-property name="displayName">Note</text-property>
-                                <expression name="expression" type="javascript">dataSetRow["Note"]</expression>
+                                <property name="name">Remark</property>
+                                <text-property name="displayName">Remark</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["Remark"]</expression>
                                 <property name="dataType">string</property>
                             </structure>
                             <structure>
@@ -420,7 +420,7 @@
                             <list-property name="visibility">
                                 <structure>
                                     <property name="format">all</property>
-                                    <expression name="valueExpr" type="javascript">!row["Keyword"]</expression>
+                                    <expression name="valueExpr" type="javascript">!row["Keywords"]</expression>
                                 </structure>
                             </list-property>
                             <cell id="654">

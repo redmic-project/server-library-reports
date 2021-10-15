@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>es.redmic</groupId>
 		<artifactId>server-parent</artifactId>
-		<version>0.1.0</version>
+		<version>0.3.0</version>
 		<relativePath />
 	</parent>
 
@@ -13,14 +13,14 @@
 	<groupId>es.redmic.lib</groupId>
 	<artifactId>reports</artifactId>
 	<packaging>jar</packaging>
-	<version>0.7.0</version>
+	<version>0.7.0-feature-refactoring</version>
 	<name>Reports</name>
 	<description>Data reports library</description>
 
 	<properties>
 		<!-- REDMIC -->
-		<redmic.models.version>0.6.0</redmic.models.version>
-		<redmic.exceptions.version>0.6.0</redmic.exceptions.version>
+		<redmic.models.version>0.12.0-feature-refactoring</redmic.models.version>
+		<redmic.exceptions.version>0.10.0</redmic.exceptions.version>
 
 		<!-- OTHER -->
 		<org.eclipse.birt.runtime.version>4.4.2</org.eclipse.birt.runtime.version>
@@ -109,7 +109,7 @@
 		</plugins>
 		<pluginManagement>
 			<plugins>
-				<!--This plugin's configuration is used to store Eclipse m2e settings 
+				<!--This plugin's configuration is used to store Eclipse m2e settings
 					only. It has no influence on the Maven build itself. -->
 				<plugin>
 					<groupId>org.eclipse.m2e</groupId>
