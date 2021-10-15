@@ -13,13 +13,13 @@
 	<groupId>es.redmic.lib</groupId>
 	<artifactId>reports</artifactId>
 	<packaging>jar</packaging>
-	<version>0.7.0-feature-refactoring</version>
+	<version>0.8.0</version>
 	<name>Reports</name>
 	<description>Data reports library</description>
 
 	<properties>
 		<!-- REDMIC -->
-		<redmic.models.version>0.12.0-feature-refactoring</redmic.models.version>
+		<redmic.models.version>0.13.0</redmic.models.version>
 		<redmic.exceptions.version>0.10.0</redmic.exceptions.version>
 
 		<!-- OTHER -->
